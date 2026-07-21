@@ -7,11 +7,11 @@ public class LogicalOperationsExample {
             int galaxiesCounted = 3;
             boolean darkMatterFound = false;
 
-            // TODO: Calculate how many cosmic bodies we've found in total.
+            // Calculate how many cosmic bodies we've found in total.
             int totalBodies = starsCounted + galaxiesCounted;
             System.out.println("Total cosmic bodies counted: " + totalBodies);
 
-            // TODO: Use a logical AND operation to check:
+            // Use a logical AND operation to check:
             System.out.println("Found more than 15 stars and the dark matter: " + (starsCounted > 15 && darkMatterFound));
         }
     }
