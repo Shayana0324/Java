@@ -9,5 +9,21 @@ public class InputProgram {
         int number = Integer.valueOf(scanner.nextLine());
         int result = number * 2;
         System.out.println("The result = " + result);
+
+        // Identifying the input values and declaring the variables
+//        int first = 1;
+//        int second = 2;
+
+        // Assigning the user input to the variables
+        System.out.println("Enter first number: ");
+        int first = scanner.nextInt();
+        System.out.println("Enter second number: ");
+        int second = scanner.nextInt();
+
+        // Identifying the operation and declaring a variable for the result
+        int product = first * second;
+
+        // Printing the result of the operation
+        System.out.println("The product of " + first + " and " + second + " = " + product);
     }
 }
