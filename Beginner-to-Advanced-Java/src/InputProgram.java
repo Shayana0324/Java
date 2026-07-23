@@ -10,10 +10,6 @@ public class InputProgram {
         int result = number * 2;
         System.out.println("The result = " + result);
 
-        // Identifying the input values and declaring the variables
-//        int first = 1;
-//        int second = 2;
-
         // Assigning the user input to the variables
         System.out.println("Enter first number: ");
         int first = scanner.nextInt();
