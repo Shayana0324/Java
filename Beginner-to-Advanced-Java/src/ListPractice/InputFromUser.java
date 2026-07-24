@@ -30,6 +30,7 @@ public class InputFromUser {
         System.out.println("Names List:" + names);
         System.out.println("Third name on the list: " + names.get(2));
 
+        scanner.close();
     }
 
 }

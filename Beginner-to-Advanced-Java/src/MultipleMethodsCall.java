@@ -8,6 +8,7 @@ public class MultipleMethodsCall {
         System.out.println("Enter the Number up to which you want the multiplication table:" );
         int max = scanner.nextInt();
         multiplicationTable(max);
+        scanner.close();
     }
 
     public static void multiplicationTable(int max) {
