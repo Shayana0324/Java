@@ -41,5 +41,7 @@ public class AddListItems {
             sumOfList += num;
         }
         System.out.println("Sum of all numbers in the list = " + sumOfList);
+
+        scanner.close();
     }
 }
