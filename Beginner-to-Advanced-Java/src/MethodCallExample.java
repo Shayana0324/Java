@@ -1,6 +1,6 @@
 package src;
 
-public class Example {
+public class MethodCallExample {
     public static void main(String[] args) {
         int min = 5;
         int max = 10;
