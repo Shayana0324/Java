@@ -14,6 +14,7 @@ public class LastInList {
             String userInput = scanner.nextLine();
 
             if (userInput.trim().isEmpty()){
+                System.out.println("First name on ths list: " + names.get(0));
                 System.out.println("Last name on the list: " + names.get(names.toArray().length - 1));
                 break;
             }
