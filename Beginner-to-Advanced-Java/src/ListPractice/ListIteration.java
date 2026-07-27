@@ -38,5 +38,14 @@ public class ListIteration {
             System.out.println(number);
             // Alternatively: System.out.println(numbers.get(i));
         }
+
+        // Reverse order print list
+        index = numbers.size() - 1;
+        System.out.println("\nList in reverse order:");
+        while(index >= 0){
+            int number = numbers.get(index);
+            System.out.println(number);
+            index = index - 1;
+        }
     }
 }
