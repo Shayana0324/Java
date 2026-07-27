@@ -19,6 +19,24 @@ public class ListIteration {
             System.out.println(teachers.get(index));
             index = index + 1;
         }
+        System.out.println("\nFor Loop iteration:");
+        // Converting the loop to for-loop
+        for(index = 0; index < teachers.size(); index++) {
+            System.out.println(teachers.get(index));
+        }
 
+        // List to store integers
+        ArrayList<Integer> numbers = new ArrayList<>();
+
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
+        System.out.println("\nIntegers: ");
+        for(int i = 0; i < numbers.size(); i++) {
+            int number = numbers.get(i);
+            System.out.println(number);
+            // Alternatively: System.out.println(numbers.get(i));
+        }
     }
 }
