@@ -12,7 +12,7 @@ package src.ListPractice;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class LastInListInt {
+public class ListIntManipulation {
     public static void main(String[] args) {
         ArrayList<Integer> numbers = new ArrayList<>();
 
