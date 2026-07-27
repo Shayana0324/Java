@@ -3,7 +3,7 @@ package src.ListPractice;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class LastInList {
+public class LastInListString {
     public static void main(String[] args) {
         ArrayList<String> names = new ArrayList<>();
 
