@@ -29,5 +29,20 @@ public class ListIntManipulation {
             }
             numbers.add(userInput);
         }
+
+        /*
+        * Expand the program to ask for a start and end indices once it has
+        * finished asking for numbers. After this the program shall
+        * print all the numbers in the list that fall in the specified
+        * range (between the indices given by the user, inclusive).
+        * */
+
+        int startIndex, endIndex;
+        System.out.println("From where?");
+        startIndex = scanner.nextInt();
+        System.out.println("To what?");
+        endIndex = scanner.nextInt();
+        System.out.println("First index value: " + numbers.get(startIndex));
+        System.out.println("Last index value: " + numbers.get(endIndex));
     }
 }
