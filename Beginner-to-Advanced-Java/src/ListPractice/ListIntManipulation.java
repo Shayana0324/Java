@@ -11,6 +11,7 @@ package src.ListPractice;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Collections;
 
 public class ListIntManipulation {
     public static void main(String[] args) {
@@ -31,7 +32,7 @@ public class ListIntManipulation {
         }
 
         /*
-        * Expand the program to ask for a start and end indices once it has
+        * Expanding the program to ask for a start and end indices once it has
         * finished asking for numbers. After this the program shall
         * print all the numbers in the list that fall in the specified
         * range (between the indices given by the user, inclusive).
@@ -44,5 +45,12 @@ public class ListIntManipulation {
         endIndex = scanner.nextInt();
         System.out.println("First index value: " + numbers.get(startIndex));
         System.out.println("Last index value: " + numbers.get(endIndex));
+
+        /*
+        * Continuing developing the program so that it finds
+        * the Greatest number in the list and prints its value
+        * after reading all the numbers.
+         * */
+        System.out.println("The greatest number: " + Collections.max(numbers));
     }
 }
