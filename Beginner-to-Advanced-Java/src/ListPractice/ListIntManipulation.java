@@ -52,5 +52,13 @@ public class ListIntManipulation {
         * after reading all the numbers.
          * */
         System.out.println("The greatest number: " + Collections.max(numbers));
+
+        /*
+        * Adding a functionality that asks the user for a number, and reports that
+        * number's index in the list.
+        * */
+        System.out.println("Search for?");
+        int searchIndex = scanner.nextInt();
+        System.out.println(searchIndex + " is at index " + numbers.indexOf(searchIndex));
     }
 }
