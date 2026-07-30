@@ -60,5 +60,11 @@ public class ListIntManipulation {
         System.out.println("Search for?");
         int searchIndex = scanner.nextInt();
         System.out.println(searchIndex + " is at index " + numbers.indexOf(searchIndex));
+
+        /*
+        * When number 9999 is entered, the reading process stops.
+        * After this the program will print the smallest number in the list,
+        * and also the indices where that number is found.
+        * */
     }
 }
