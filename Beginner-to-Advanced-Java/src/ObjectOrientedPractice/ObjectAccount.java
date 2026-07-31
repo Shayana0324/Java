@@ -19,5 +19,16 @@ public class ObjectAccount {
         System.out.println(artosAccount);
         System.out.println(artosSwissAccount);
 
+        Account matthewsAccount = new Account("Matthew's Account", 1000.00);
+        Account myAccount = new Account("My Acount", 0.00);
+
+        System.out.println("Initial State");
+        System.out.println(matthewsAccount);
+        System.out.println(myAccount);
+
+        matthewsAccount.withdraw(100.0);
+        myAccount.deposit(100.0);
+        System.out.println("The balance in Matthew's Account: " + matthewsAccount.balance());
+        System.out.println("The balance in my account: " + myAccount.balance());
     }
 }
