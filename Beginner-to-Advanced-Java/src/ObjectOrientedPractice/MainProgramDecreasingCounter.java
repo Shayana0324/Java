@@ -14,5 +14,6 @@ public class MainProgramDecreasingCounter {
 
         counter.decrement();
         counter.printValue();
+
     }
 }
