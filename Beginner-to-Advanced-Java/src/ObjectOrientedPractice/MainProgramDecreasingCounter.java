@@ -1,7 +1,6 @@
 package src.ObjectOrientedPractice;
-import src.ObjectOrientedPractice.DecreasingCounter;
 
-public class MainProgram {
+public class MainProgramDecreasingCounter {
     public static void main(String[] args) {
         DecreasingCounter counter = new DecreasingCounter(10);
 
