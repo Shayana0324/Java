@@ -17,7 +17,9 @@ public class Person {
     // Changing an Instance Variable's value in a method
     // growOlder() method added
     public void growOlder() {
-        this.age = this.age + 1;
+        if (this.age < 30) {
+            this.age = this.age + 1;
+        }
     }
 
     public static void main(String[] args) {
