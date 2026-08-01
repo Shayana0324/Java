@@ -4,3 +4,6 @@ public class Person {
     private int age;
 -- each variable is preceded by the keyword "private"
 -- "private" means that the variables are 'hidden' inside the object -- which is known as encapsulation
+
+-- The constructor is defined after the instance variables.
+-- The constructor's name is always the same as the class name.
