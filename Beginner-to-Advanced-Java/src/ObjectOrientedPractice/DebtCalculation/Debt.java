@@ -14,6 +14,6 @@ public class Debt {
     }
 
     public void waitOneYear() {
-        System.out.println("Debt amount: " + (this.balance * this.interestRate));
+        this.balance = this.balance * this.interestRate;
     }
 }
