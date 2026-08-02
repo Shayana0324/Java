@@ -26,6 +26,17 @@ public class Person {
         return this.age;
     }
 
+    public boolean isOfLegalAge() {
+        if (this.age < 18) {
+            return false;
+        }
+        return true;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
     public static void main(String[] args) {
         Person ada = new Person("Ada");
         Person antti = new Person("Antti");
@@ -44,5 +55,11 @@ public class Person {
         System.out.println("Antti's age: " + antti.returnAge());
         int combined = ada.returnAge() + antti.returnAge();
         System.out.println("Ada and Antti's combined age " + combined + " years");
+
+        if (antti.isOfLegalAge()) {
+            System.out.println(antti.getName() + " is of legal age");
+        } else {
+            System.out.println(antti.getName() + " is underage");
+        }
     }
 }
