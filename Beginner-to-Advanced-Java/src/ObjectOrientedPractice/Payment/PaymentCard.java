@@ -10,4 +10,12 @@ public class PaymentCard {
     public String toString() {
         return("This card has a balance of " + this.balance + " euros");
     }
+
+    public void earAffordable() {
+        this.balance = this.balance - 2.60;
+    }
+
+    public void eatHeartily() {
+        this.balance = this.balance - 4.60;
+    }
 }
