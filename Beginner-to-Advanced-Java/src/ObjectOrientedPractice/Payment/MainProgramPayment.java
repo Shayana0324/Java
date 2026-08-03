@@ -6,11 +6,11 @@ public class MainProgramPayment {
         PaymentCard card = new PaymentCard(5);
         System.out.println(card);
 
-        card.earAffordable();
+        card.eatHeartily();
         System.out.println(card);
 
         card.eatHeartily();
-        card.earAffordable();
+//        card.earAffordable();
         System.out.println(card);
     }
 }

@@ -22,4 +22,16 @@ public class PaymentCard {
             this.balance = this.balance - 4.60;
         }
     }
+
+    public void addMoney(double amount) {
+        // Check if the deposit is positive to prevent adding negative amounts
+        if(amount > 0) {
+            this.balance += amount;
+        }
+
+        // Cap the balance at exactly 150.0 euros if it goes over
+        if(this.balance > 150.0) {
+            this.balance = 150.0;
+        }
+    }
 }
