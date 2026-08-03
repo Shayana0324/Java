@@ -5,5 +5,12 @@ public class MainProgramPayment {
     public static void main(String[] args) {
         PaymentCard card = new PaymentCard(50);
         System.out.println(card);
+
+        card.earAffordable();
+        System.out.println(card);
+
+        card.eatHeartily();
+        card.earAffordable();
+        System.out.println(card);
     }
 }
