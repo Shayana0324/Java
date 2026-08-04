@@ -11,8 +11,14 @@ public class GuestList {
 
         try(Scanner fileScanner = new Scanner(Paths.get("src", "FilesAndReadingData", "guestlist.txt"))){
             while(fileScanner.hasNextLine()) {
-                    guests.add(fileScanner.nextLine());
+                String line = fileScanner.nextLine();
+                // if the line is blank we do nothing
+                if (line.isEmpty()) {
+                    continue;
                 }
+
+                guests.add(line);
+            }
         } catch(Exception e) {
             System.out.println("Error: " + e.getMessage());
             return;
