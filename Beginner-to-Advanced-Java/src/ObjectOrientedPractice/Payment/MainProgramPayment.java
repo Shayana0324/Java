@@ -3,26 +3,15 @@ import src.ObjectOrientedPractice.Payment.PaymentCard;
 
 public class MainProgramPayment {
     public static void main(String[] args) {
-        PaymentCard paulsCard = new PaymentCard(20);
-        PaymentCard mattsCard = new PaymentCard(30);
+        PaymentCard petesCard = new PaymentCard(10);
 
-        paulsCard.eatHeartily();
-        System.out.println("Paul: " + paulsCard);
+        System.out.println("money " + petesCard.balance());
+        boolean wasSuccessful = petesCard.takeMoney(8);
+        System.out.println("successfully withdrew: " + wasSuccessful);
+        System.out.println("money " + petesCard.balance());
 
-        mattsCard.earAffordable();
-        System.out.println("Matt: " + mattsCard);
-
-        paulsCard.addMoney(20);
-        mattsCard.eatHeartily();
-
-        System.out.println("Paul: " + paulsCard);
-        System.out.println("Matt: " + mattsCard);
-
-        paulsCard.earAffordable();
-        paulsCard.earAffordable();
-        mattsCard.addMoney(50);
-
-        System.out.println("Paul: " + paulsCard);
-        System.out.println("Matt: " + mattsCard);
+        wasSuccessful = petesCard.takeMoney(4);
+        System.out.println("successfully withdrew: " + wasSuccessful);
+        System.out.println("money " + petesCard.balance());
     }
 }
