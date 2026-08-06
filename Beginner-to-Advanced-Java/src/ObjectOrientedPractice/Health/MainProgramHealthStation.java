@@ -15,11 +15,18 @@ public class MainProgramHealthStation {
         childrenHospital.feed(ethan);
         childrenHospital.feed(ethan);
         childrenHospital.feed(ethan);
+        System.out.println("weighings performed: " + childrenHospital.weighings());
+        System.out.println("");
+
+        childrenHospital.weigh(ethan);
+        childrenHospital.weigh(peter);
+        System.out.println("weighings performed: " + childrenHospital.weighings());
 
         System.out.println("");
 
         System.out.println(ethan.getName() + " weight: " + childrenHospital.weigh(ethan) + " kilos");
         System.out.println(peter.getName() + " weight: " + childrenHospital.weigh(peter) + " kilos");
+        System.out.println("weighings performed: " + childrenHospital.weighings());
 
     }
 }
