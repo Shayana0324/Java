@@ -7,6 +7,10 @@ public class PaymentCard {
         this.balance = openingBalance;
     }
 
+    public double balance() {
+        return this.balance;
+    }
+
     public String toString() {
         return("This card has a balance of " + this.balance + " euros");
     }
@@ -23,15 +27,27 @@ public class PaymentCard {
         }
     }
 
-    public void addMoney(double amount) {
-        // Check if the deposit is positive to prevent adding negative amounts
-        if(amount > 0) {
-            this.balance += amount;
-        }
+//    public void addMoney(double amount) {
+//        // Check if the deposit is positive to prevent adding negative amounts
+//        if(amount > 0) {
+//            this.balance += amount;
+//        }
+//
+//        // Cap the balance at exactly 150.0 euros if it goes over
+//        if(this.balance > 150.0) {
+//            this.balance = 150.0;
+//        }
+//    }
+    public void addMoney(double increase) {
+        this.balance = this.balance + increase;
+    }
 
-        // Cap the balance at exactly 150.0 euros if it goes over
-        if(this.balance > 150.0) {
-            this.balance = 150.0;
+    public boolean takeMoney(double amount) {
+        if (this.balance <= amount) {
+            this.balance -= amount;
+            return true;
+        } else {
+            return false;
         }
     }
 }
