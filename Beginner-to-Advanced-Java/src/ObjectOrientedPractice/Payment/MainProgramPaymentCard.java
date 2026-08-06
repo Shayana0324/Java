@@ -1,7 +1,6 @@
 package src.ObjectOrientedPractice.Payment;
-import src.ObjectOrientedPractice.Payment.PaymentCard;
 
-public class MainProgramPayment {
+public class MainProgramPaymentCard {
     public static void main(String[] args) {
         PaymentCard petesCard = new PaymentCard(10);
 
