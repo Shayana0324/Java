@@ -1,5 +1,6 @@
 package src.ObjectOrientedPractice.Payment;
 import src.ObjectOrientedPractice.Payment.PaymentTerminal;
+import src.ObjectOrientedPractice.Payment.PaymentCard;
 
 public class MainProgramPaymentTerminal {
     public static void main(String[] args) {
@@ -8,11 +9,22 @@ public class MainProgramPaymentTerminal {
         double change = unicafeExactum.eatAffordably(10);
         System.out.println("remaining change: " + change);
 
-        change = unicafeExactum.eatAffordably(5);
-        System.out.println("remaining change: " + change);
+        PaymentCard annesCard = new PaymentCard(7);
 
-        change = unicafeExactum.eatHeartily(4.3);
-        System.out.println("remaining change " + change);
+        boolean wasSuccessful = unicafeExactum.eatHeartily(annesCard);
+        System.out.println("There was enough money: " + wasSuccessful);
+
+        wasSuccessful = unicafeExactum.eatHeartily(annesCard);
+        System.out.println("There was enough money: " + wasSuccessful);
+
+        wasSuccessful = unicafeExactum.eatAffordably(annesCard);
+        System.out.println("There was enough money: " + wasSuccessful);
+
+//        change = unicafeExactum.eatAffordably(5);
+//        System.out.println("remaining change: " + change);
+//
+//        change = unicafeExactum.eatHeartily(4.3);
+//        System.out.println("remaining change " + change);
 
         System.out.println(unicafeExactum);
     }
