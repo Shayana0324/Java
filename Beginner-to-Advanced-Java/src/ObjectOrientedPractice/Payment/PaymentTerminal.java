@@ -1,4 +1,5 @@
 package src.ObjectOrientedPractice.Payment;
+import src.ObjectOrientedPractice.Payment.PaymentCard;
 
 public class PaymentTerminal {
     private double money;           // Amount of cash
@@ -34,6 +35,24 @@ public class PaymentTerminal {
             return payment - 4.30;
         }
         return payment;
+    }
+
+    public boolean eatAffordably(PaymentCard card) {
+        if(card.balance() >= 2.50) {
+            card.takeMoney(2.50);
+            affordableMeals++;
+            return true;
+        }
+        return false;
+    }
+
+    public boolean eatHeartily(PaymentCard card) {
+        if(card.balance() >= 4.30) {
+            card.takeMoney(4.30);
+            affordableMeals++;
+            return true;
+        }
+        return false;
     }
 
     public String toString() {
