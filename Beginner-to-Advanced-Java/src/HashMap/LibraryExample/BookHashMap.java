@@ -38,5 +38,14 @@ public class BookHashMap {
         System.out.println();
         System.out.println(get(books, "Persuasion"));
 
+        long start = System.nanoTime();
+        System.out.println(get(books, "Sense and Sensibility"));
+        System.out.println();
+
+//        System.out.println(get(books, "Persuasion"));
+        long end = System.nanoTime();
+        double durationInMilliseconds = 1.0 * (end - start) / 1000000;
+
+        System.out.println("The book search took " + durationInMilliseconds + " milliseconds.");
     }
 }
